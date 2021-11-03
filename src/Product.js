@@ -8,15 +8,15 @@ function Product(props) {
     function increment() {
         setValue(value+1);
         setTotalProd(totalProd + (props.price));
-        console.log(totalProd, props.price);
+        // console.log(totalProd, props.price);
 
     }
     function decrement() {
         if (value>0){
             setValue(value-1);
-            console.log(totalProd);
-            setTotalProd((totalProd - (props.price)).toFixed(2));
-            console.log(totalProd, props.price);
+            // console.log(totalProd);
+            setTotalProd((totalProd - (props.price)));
+            // console.log(totalProd, props.price);
 
         }    
     }
